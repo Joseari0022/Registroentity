@@ -98,6 +98,7 @@
             this.Idbutton.Text = "Id";
             this.Idbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Idbutton.UseVisualStyleBackColor = true;
+            this.Idbutton.Click += new System.EventHandler(this.Idbutton_Click_1);
             // 
             // ConfirmarContrasenatextBox
             // 
@@ -195,7 +196,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "RegistroUsuarios";
-            this.Text = "Form1";
+            this.Text = "RegistroUsuario";
             ((System.ComponentModel.ISupportInitialize)(this.NombreerrorProvider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ContrasenaerrorProvider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConfirmarContrasenaerrorProvider)).EndInit();

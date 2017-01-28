@@ -66,6 +66,11 @@ namespace BLL
             }
         }
 
+        public static List<Usuarios> GetLista(int v)
+        {
+            throw new NotImplementedException();
+        }
+
         public static Usuarios Buscar(int Id)
         {
             try
@@ -79,6 +84,11 @@ namespace BLL
             {
                 throw;
             }
+        }
+
+        public static object GetListaNombre(string text)
+        {
+            throw new NotImplementedException();
         }
 
         public static List<Usuarios> GetLista()

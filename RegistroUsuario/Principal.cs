@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using SistemaGonzalez.Registros;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,20 @@ namespace RegistroUsuario
         public Principal()
         {
             InitializeComponent();
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroUsuarios ru = new RegistroUsuarios();
+            ru.MdiParent = this.MdiParent;
+            ru.Show();
+        }
+
+        private void usuariosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Consultas.ConsultaUsuario cu = new Consultas.ConsultaUsuario();
+            cu.MdiParent = this.MdiParent;
+            cu.Show();
         }
     }
 }
